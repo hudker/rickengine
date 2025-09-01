@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Exclude the main page (/), haha.html, and rr.mp4
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteCond %{REQUEST_URI} !^/redirect\.html$
+RewriteCond %{REQUEST_URI} !^/rr\.mp4$
+
+# Internally rewrite everything else to redirect.html (redirect to rr.mp4)
+RewriteRule ^.*$ /redirect.html [L]
