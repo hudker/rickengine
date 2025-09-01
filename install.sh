@@ -62,15 +62,11 @@ echo "✅ done"
 
 # Copy payload files
 echo "📦 Copying rr.mp4 → /var/www/rickengine"
-cp www/rr.mp4 /var/www/rickengine/
+cp rr.mp4 /var/www/rickengine/
 echo "✅ done"
 
 echo "📦 Copying .htaccess → /var/www/rickengine"
-cp www/.htaccess /var/www/rickengine/
-echo "✅ done"
-
-echo "📦 Copying haha.html → /var/www/rickengine"
-cp www/haha.html /var/www/rickengine/
+cp .htaccess /var/www/rickengine/
 echo "✅ done"
 
 # Generate Apache config with chosen port
